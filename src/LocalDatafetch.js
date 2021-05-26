@@ -1,5 +1,6 @@
 import React from 'react';
-import MyData from './MyData'
+import MyData from './MyData';
+import {Link} from 'react-router-dom'
 
 const LocalDatafetch = () => {
     return (
@@ -10,7 +11,7 @@ const LocalDatafetch = () => {
             {
                 MyData.map((i)=>{
                     return <ul key={i.id} >
-                            <li>{i.name}</li>
+                            <li><Link to={`/user-details/${i.id}`}>{i.name} </Link></li>
                         </ul>
                 })
             }
