@@ -4,7 +4,7 @@ import Nav from './Nav';
 
 import Home from './component/Home';
 import UsertDetails from './component/UsertDetails';
-import PatientsDetails from './PatientsDetails';
+import PatientsDetails from './component/PatientsDetails';
 
 function App() {
 
